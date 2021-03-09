@@ -1,0 +1,22 @@
+.title{
+    color: red;
+    margin: 10px 0px 10px 10px;
+}
+.jad{
+    color: black;
+    margin: 10px 10px;
+}
+
+.intro-img{
+    margin: 20px;
+    border: 6px solid white;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+ 
+#intro-sec{
+
+    background-color: aqua;
+
+}
