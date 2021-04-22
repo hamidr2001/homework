@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload=" welcomechange(),yuyu(),userdata()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container-fluid">
             <div class="container">
@@ -63,9 +63,11 @@
         <section id="intro-sec" class="bg-secondary">
             <div class="pt-3 pb-1">
                 <div class="container">
+                    <h5 id='welcom-txt'>hello</h5>
                     <div class="row">
                         <div class="col-12  col-md-8 pr-5">
-                            <h1>bootcamp</h1>
+
+                            <h1 id='tyty'>bootcamp</h1>
                             <h4>this is a test web page</h4>
                             <p class="d-md-block d-none">
                                 One day, Emily’s teacher finds out.
@@ -104,6 +106,23 @@
             </div>
         </section>
 
+
+        <form class="p-5">
+        <input type="text" id="username" class="form-control mb-4" placeholder="username">
+        <input type="text" id="name" class="form-control mb-4" placeholder="name" >
+        </form>
+        <section id='hoverme'>
+            <div id='hover_me' class="mx-auto p-5" onmouseover="mouseover()"  onmouseout="mouseout()">
+                <p id="hovermetxt" class="p-5">
+                    hoverme
+                </p>
+
+            </div>
+
+
+        </section>
+
+
         <section id="aboat-sec">
             <div class="container mt-2">
                 <p>what can you learn?</p>
@@ -118,6 +137,8 @@
             </div>
         </section>
     </div>
+
+    <script type="text/javascript" src="./js/func.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"

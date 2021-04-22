@@ -24,3 +24,16 @@
 
     background-color: rgb(156, 206, 106) !important;
 }
+#hoverme{
+    width: 100%;
+    align-items: center;
+}
+#hover_me{
+    width: 150px;
+    height: 150px;
+    background:rgb(60, 144, 144);
+    border-radius: 100%;
+}
+#hovermetxt{
+    text-align: center;
+}

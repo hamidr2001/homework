@@ -13,7 +13,7 @@
     <title>real madrid</title>
 </head>
 
-<body>
+<body onload="welcome()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <div class="container">
@@ -65,8 +65,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12  col-md-8 pr-5">
+
                             <h1>The club</h1>
-                            <h4>This is a fan page</h4>
+                            <h5 id="wel_txt">hello</h5>
+
+                            <h3>This is a fan page</h3>
                             <p class="d-md-block d-none">
                                 Spanish professional football club based in Madrid
                             </p>
@@ -83,7 +86,7 @@
                         </div>
                         <div class="col-12 col-md-4 ">
 
-                            <img class="w-200  rounded-3  shadow-lg d-md-block d-none"
+                            <img class="w-200  rounded-3  shadow-lg d-md-block d-none" id="photoo" 
                                 src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExIWFRUXGBcXFxcXFxgYFxcYFx0YGBoYFxcYHiggHR0lHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICUtLS8tMC0tLS8tLS4tLy0tLS0yLS8tLS0tLS0tLS0tLS0vLS0tLS0tLS0tLS0tLS0tLf/AABEIALQBFwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQIDBQQGB//
                                 EAEQQAAICAQIEAwQHBQUFCQAAAAECABEDEiEEBTFBE1FhInGBkQYyQlKhwfAjYrHR4RRyg5KiM0NTgvEVJDREY3N0s8L/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/8QANREAAQMDAgMGBQMDBQAAAAAAAQACEQMhMQQSQVFxE2GBkbHwIjKhwdFCUpIFFPFicoKy4f/aAAwDAQACEQMRAD8A+kgRhpISIEIkWklMVQqEU6gVHlEDJgwijUlUBBoREVQihFFxIES0yNQiQEF8pycbx3h5MWPw2bxCRqHRaofnfuE7owireCCPrHUIljJs30/OMmSJA67f12lPGnINPhhCS6htZI9jfUVrq3p75IuitBkSZOEhFRiFWPU/zlhO3lJVCoRV7+cgXIksplGV5ICLpx5LH9JPVOTg7s+X5zqgogmVkScJCJARGSMUIlqiuSqRhFG5DqZYVgBCIhERCEVpMamKSEIpEQAj1XHCKJWAEmTCESAqIi/SSaKEUSsVSZMhUIogmNIyI4RBJo117T5TxWTJjyFrKZVYknuG738fnPqpM5W4bEzhmRC46MVBYV5Gu01pVNhNlR7dys4ZyUUsNLFVLDyJAJHzlqw0yQWZK6YiK73+Z/hGDOXgeZLlYqARQseoutx2N9v5GokBF1ASrDlDCwCN6pgQbHoZaAB0HU2ZAFidxtJRFRwddutSvCTVMQxHWhX4WYRQz4iek51wNc6lyggE+zdbNsRfYjzktO8mSEhLElCpJT6V74MYL75CJ1FUmoicQirMI6hUIioiJK4yIRVgQIlkRhFWYRmEIpxiICSUwiYkwZExwilCKMQiiYVJQhFAiFRmMCEUY6gYCEUWhokqkHYAEk1W593eEXDynh86l2zZNRJIVVrRp2INVercjr86BlnFcwRV7OSGoIQbCiybugB+hMfmvMbBZgQgF6CB9UhdLNR623fYWvczjz8aiIrupptOwUBiBekqTRogdSBv2JExqV+IE3jkJ5T43gGACYjOlOkXENGeWT75XubBamHiMrGgWraxjWh5sCxBIboL6dfjRjzMtlWYNVkg39oj21o3vq2O/tTOH0zYCkwooHQWT/ACc/Fc2ZAjBK8RQSCrbHUxqyBqPtdd9iPOZlgc5pfUM3xAEwcAgz0JMC/CV1nR6hpDez+bEkcL5BAH0my9Fh5ww6/tFGq6AGQAC7bcKTV7Cunz1cPEo/1HVu/skHb3dp8+x86sjUlbiyDe3u+Z/RmtxfGKjKGU02pg2nSAx2NFd6BGxHl0G8v2jgS2N1pEZgZ+HJI7pJkQLwMK2nfSjtBt6488fjivYAzPca
                                 /a8/StpgZMua982RkcaAW0URQLAqoodeo6it5p8NkYCuv4zqbBaHA2Pv8AxzEHBXKTeCuhQw2HSdSZvMV7pyHMfdOfJna9ifWTCSurmPE0tg/rzlHKOYFr1fCcPMOYBVs0ZzcNnHUHY/nLbPhUbrr1Hjk9KAnPm4thvf5zJPNAP0JmcRzKzXWBTJQuC9dwfFrkFjr3E6J5f6PZChLEE3t1Aqz6z1Cbi5R7dphWaZCiI7j0wqUUqUi0arHUIqYRtCEUxGIwsYEIo/CSBkpEwikTGIhAwilcJWTJXCJ1GJFYxCJkRVGYgIROpj8YXGIrlcHXk2OkrpS9VMosmgCD7+818jAAmjsCdgSdt9gNyZxZqyqj4mQ6GsXupItSDW4Iv9dhmDHv065GPELTdeC5scmTIwCnStHSOg2smvexqaSNhbhgp1ZGFVVE7JZAHXULPw9LnTzHhMik5H9hnpP2ZBA3ZyoLUAetE9thvODmKPjC/sAxB6AKNJ29olgFV+n2T7xPKc6oIpEcmybXImZMASQSCHWO7iJXpvrtdTbFtt7Z4TwvwIgC1lw4eEUeHQ1ZQQzYyQLWztR70Aa603SaPNOJ8bGFVFBSgzWBVaSWJP1ujDUP3vMS7xV02ztfo1qOvVsYFnp09ZzcLnJY6sgI7aWzk/iYB1B+LY44Ng4j5piQBYEWGYiS5phTU1LXvD3OEg2k3vyE8PZXNg4XD4qkBnxFTbdgwO+s7UKF7+Y7S3n4V3UYSxAB9nrp6G9ulkn8JdzLIwoKhyqT9VtBIF7WjLZ7dG6/OXZMRUK9aAKtgB0G+lw+9ADoHJ/CV31GZEuvF5MDiYAcATBMNG4gEWupbqZqB5kwOOL9c8Zg+Kp5Q14Tq6o21gljpIbSD22dh/yj3TdXIJkYeM8PG2JQCGvdvrAWTe3fc9d/cd5xvzQk0J6+mpPAMiAST33Jmbm5zgX75XmamqxzyW/THv7QvSZc4Ez34wjrsfnM1+PFdf6TP4zjiffOptNc5crOYcTdi5Vh4ikG+/znEilus6lx+U3gRCzlAykzs4bhrqc2LH5zW5ZjJYID1IHTpe0q4wpAXocfA6caUCTQJHqRO/gVIWiK67TqMQnBMrpUYjJEyBMIpREwuQIhEnhHCEXRUVScgYREjGDGYRQHWOD7C5k5uZ01dK/XcSQCVErWsSKvtcyuF45dVHpv+X9ZoZHOmlqzvXf3yS2EldCHbaBaZGXmhQ0w/hLG50gC99W/bYXRv5GNpSQu7+0gC2IX3kCpdjyA7gg+4gzwnHcQGJK/iel+sq5PzLJjygiyPtDzFiadiSLKnaL3S8diOQ4hkU5AL
@@ -133,6 +136,22 @@
             </div>
         </section>
 
+        <form class="p-5">
+            <input type="text" id="username" class="form-control mb-4" placeholder="name" onkeyup="keyupinput(event)">
+            
+            <input type="text" id="name" class="form-control mb-4" placeholder="username" >
+            </form>
+
+            <section id='hoverme'>
+                <div id='hover_me' class="mx-auto p-5" onmouseover="mouseover(this)"  onmouseout="mouseout(this)">
+                    <p id="hovermetxt" class="p-1">
+                       hala madrid
+                    </p>
+    
+                </div>
+    
+            </section>
+
         <section id="aboat-sec">
             <div class="container mt-2">
                 <p>what you should know</p>
@@ -147,6 +166,7 @@
             </div>
         </section>
     </div>
+    <script type="text/javascript"  src="./js-hw/function.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
